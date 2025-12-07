@@ -20,7 +20,7 @@ TARGET_HOST = "8.8.8.8"      # Google DNS
 GATEWAY_IP = "192.168.0.1"   # IP de tu Router (Detectada automáticamente en el código si es posible)
 PING_INTERVAL = 1            # Segundos entre pings
 TIMEOUT = "1000"             # Milisegundos (1s)
-SERVER_URL = "http://localhost:5000/report" # URL de tu servidor (cambiar por tu URL real al desplegar)
+SERVER_URL = "https://cortes-alxx.onrender.com/report" # URL de tu servidor en Render
 
 # Identificar al usuario (Nombre del equipo)
 USER_ID = socket.gethostname()
