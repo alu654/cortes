@@ -166,9 +166,9 @@ def main():
                 router_ok = ping(GATEWAY_IP)
                 cause = "ISP (Internet)" if router_ok else "Local (Router/WiFi)"
 
-                # Test de velocidad (opcional, solo si el corte fue > 5 seg para no spamear)
+                # Test de velocidad (Siempre ejecutar, sin umbral mínimo)
                 dl, ul = 0, 0
-                if duration > 5 and SPEEDTEST_AVAILABLE:
+                if SPEEDTEST_AVAILABLE:
                     dl, ul = run_speedtest()
                     print(f"   📊 Velocidad actual: ⬇️ {dl} Mbps | ⬆️ {ul} Mbps")
 
